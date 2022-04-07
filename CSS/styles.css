@@ -106,6 +106,7 @@ header{
 }
 .contact-list{
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 .contact-list .item + .item{
@@ -124,15 +125,14 @@ header{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--text-color)
+    color:var(--text-color);
+    fill: var(--text-color);   
     }
-.contact-icon{
-    fill: var(--text-color)
-}
-.contact-icon:hover{
-    
-    cursor: pointer;
-}
+.tel-icon,
+.email-icon{
+    margin-right: 10px;
+} 
+
 .contact-list :hover,
 .contact-list :focus{
     fill: var(--blue-color);
@@ -351,6 +351,9 @@ header{
 .team-person:last-child{
     margin-right: 0px;
 }
+.sociallinks{
+    padding: 30px 32px 30px 32px;
+}
 
 .team-name,
 .team-possition{
@@ -358,47 +361,42 @@ header{
     line-height: 1.19;
     text-align: center;
 }
-.team-name{
-    margin-top: 30px;
 
+.team-name{
+    padding-bottom: 10px;
     font-weight: 500;
     color: var(--titels-color);
 }
 
 .team-possition{
+    padding-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
 }
-.sociallinks{
-    padding: 16px 32px 30px 32px;
-}
+
 .sociallinks-list{
     display: flex;
     justify-content: center;
  }
 
-.sociallinks-item{
-    padding: 12px;
+ .sociallinks-link{
+    border-radius: 30px;
     width: 44px;
     height: 44px;
+    padding: 12px;
     margin-left: 10px;
-    border-radius: 30px;
     background-color: var(--white-color);
+    fill: var(--border-color-icon);
 }
 
 .sociallinks-item:last-child{
     margin-left: 0px;
 }
-.sociallinks-item:hover,
-.sociallinks-item:focus{
-    background-color: var(--blue-color);
-}
-.sociallink-icon{
-    fill: var(--border-color-icon)
-}
-.sociallink-icon:hover,
-.sociallink-icon:focus{
-    fill: var(--white-color)
+
+.sociallinks-link:hover,
+.sociallinks-link:focus{
+fill: var(--white-color);
+background-color: var(--blue-color);
 }
 
 /*Сеция постоянные клиенты*/
@@ -409,11 +407,13 @@ header{
 .clients-list{
     display: flex;
     justify-content: center;
+    border-radius: 15px;
 }
 .client-logo{
     padding: 16px 32px 16px 32px;
     margin: 0px;
     outline: 1px solid var(--border-color-icon);
+    border-radius: 3px;
     width: 170px;
     height: 92px;
     fill: var(--border-color-icon)
@@ -424,8 +424,10 @@ header{
 .client-logo:hover,
 .client-logo:focus{
     fill: var(--blue-color);
+    outline-color: var(--blue-color);
     cursor: pointer;
 }
+
 /*кнопки фильтров*/
 .portfolio{
     padding-bottom: 94px;
@@ -537,8 +539,12 @@ header{
     margin-bottom: 0px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link{
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -583,6 +589,7 @@ header{
 
 /*стиль футер*/
 .footer{
+    max-height: 262px;
     padding-bottom: 60px;
     padding-top: 60px;
 
@@ -591,6 +598,7 @@ header{
 
 .footer .container{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo{
@@ -652,6 +660,7 @@ header{
 }
 .social-links-titel{
     color: var(--white-color);
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -659,8 +668,9 @@ header{
     margin-bottom: 9px;
 }
 
-.social{
+.social-links-list{
     display: flex;
+    align-items: center;
 }
 .social-link-icon{
     background-color: rgba(255, 255, 255, 0.1);
@@ -670,7 +680,7 @@ header{
     padding: 12px;
     margin-right: 10px;
 }
-.social-link-icon:first-child{
+.social-link-icon:last-child{
     margin-right: 0px;
 }
 .svg-icon{
