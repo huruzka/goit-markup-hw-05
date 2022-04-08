@@ -65,9 +65,7 @@ header{
     border-bottom: 1px solid var(--border-color);
 }
 .nav-logo{
-    width: 145px;
-    height: 31px;
-    margin: 24px 0px 25px 0px;
+    padding: 24px 0px 25px 0px;
     text-decoration: none;
     font-family: Raleway;
     font-weight: 700;
@@ -76,6 +74,7 @@ header{
     letter-spacing: 0.03em;
     color: var(--blue-color)
 }
+
 .style-logo{
     color: var(--titels-color);
 }
@@ -121,13 +120,16 @@ header{
 
 .email,
 .tel{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--text-color);
-    fill: var(--text-color);   
+    fill: var(--text-color);  
     }
+
 .tel-icon,
 .email-icon{
     margin-right: 10px;
@@ -363,13 +365,13 @@ header{
 }
 
 .team-name{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
     color: var(--titels-color);
 }
 
 .team-possition{
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -380,6 +382,8 @@ header{
  }
 
  .sociallinks-link{
+    display: flex;
+    justify-content: center;
     border-radius: 30px;
     width: 44px;
     height: 44px;
@@ -406,23 +410,31 @@ background-color: var(--blue-color);
 }
 .clients-list{
     display: flex;
-    justify-content: center;
     border-radius: 15px;
 }
 .client-logo{
-    padding: 16px 32px 16px 32px;
-    margin: 0px;
-    outline: 1px solid var(--border-color-icon);
-    border-radius: 3px;
-    width: 170px;
-    height: 92px;
-    fill: var(--border-color-icon)
+
 }
+
 .client-logo:not(:last-child){
     margin-right: 30px;
 }
-.client-logo:hover,
-.client-logo:focus{
+
+.client-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    outline: 1px solid var(--border-color-icon);
+    border-radius: 3px;
+    fill: var(--border-color-icon);
+}
+
+.client-logo-link:hover,
+.client-logo-link:focus{
     fill: var(--blue-color);
     outline-color: var(--blue-color);
     cursor: pointer;
