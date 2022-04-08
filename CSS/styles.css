@@ -14,6 +14,7 @@
     --filter-background-color: #F5F4FA;
     --border-color-icon: #AFB1B8;
     --portfolio-background-color: rgba(33, 150, 243, 0.9);
+    --section-do: rgba(47, 48, 58, 0.8);
 }
 /*убираю стили по умолчание*/
 h1,
@@ -110,6 +111,10 @@ header{
 }
 .contact-list .item + .item{
     margin-left: 50px;
+}
+
+.current{
+    color: var(--blue-color);
 }
 
 .nav-item :hover,
@@ -300,11 +305,36 @@ header{
     display: flex;
 }
 .do-list-item{
+    position: relative;
     margin-right: 30px;
 }
 .do-list-item:last-child{
     margin-right: 0px;
 }
+
+.do-list-item::before{
+    display: inline-block;
+    content: "";
+    background-color: var(--section-do);
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+}
+
+.do-text{
+    position: absolute;
+    bottom: 27px;
+    left: 86px;
+       
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
 /*стили заголовкам h2*/
 .titel{
     margin-bottom: 50px;
@@ -412,8 +442,18 @@ background-color: var(--blue-color);
     display: flex;
     border-radius: 15px;
 }
-.client-logo{
 
+.nav-link.current{
+    color: var(--blue-color);
+}
+
+.current::after{
+    content: '';
+    width: 48px;
+    height: 4px;
+
+    background-color: var(--blue-color);
+    border-radius: 2px;
 }
 
 .client-logo:not(:last-child){
