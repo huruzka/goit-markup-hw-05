@@ -117,6 +117,10 @@ header{
     color: var(--blue-color);
 }
 
+.nav-item{
+    transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-item :hover,
 .nav-item :focus{
     color: var(--blue-color);
@@ -139,6 +143,10 @@ header{
 .email-icon{
     margin-right: 10px;
 } 
+
+.contact-list{
+    transition: fill, color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .contact-list :hover,
 .contact-list :focus{
@@ -421,6 +429,9 @@ header{
     margin-left: 10px;
     background-color: var(--white-color);
     fill: var(--border-color-icon);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sociallinks-item:last-child{
@@ -471,6 +482,10 @@ background-color: var(--blue-color);
     outline: 1px solid var(--border-color-icon);
     border-radius: 3px;
     fill: var(--border-color-icon);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo-link:hover,
@@ -556,6 +571,10 @@ background-color: var(--blue-color);
     letter-spacing: 0.03em;
     color: var(--titels-color);
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover,
@@ -593,6 +612,8 @@ background-color: var(--blue-color);
 
 .portfolio-link{
     display: block;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -613,6 +634,8 @@ background-color: var(--blue-color);
     height: 100%;
 
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-thumb:hover:before{
@@ -633,6 +656,8 @@ background-color: var(--blue-color);
     font-size: 18px;
     line-height: 28px;
     color: var(--white-color);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .posrtfolio-text:hover{
@@ -678,15 +703,21 @@ background-color: var(--blue-color);
 
 .address{
     color: var(--white-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-email,
 .footer-tel{
     color: var(--address-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover,
-.footer-email:focus{
+.address:focus{
     color: var(--blue-color);
     background-color: var(--background-hero-section);
 }
@@ -731,6 +762,8 @@ background-color: var(--blue-color);
     height: 44px;
     padding: 12px;
     margin-right: 10px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-icon:last-child{
     margin-right: 0px;
