@@ -389,9 +389,7 @@ img {
 .footer .container{
     display: flex;
     align-items: baseline;
-}
-.footer-box{
-    margin-right: 120px;
+    justify-content: space-between;
 }
 .social-media-title{
     font-weight: 500;
@@ -408,6 +406,35 @@ img {
 }
 .footer .social-icon-link:hover,
 .footer .social-icon-link:focus{
- background-color: #31d0aa;
+    background-color: #31d0aa;
 }
+.subscribe-label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.subscribe-input{
+    padding: 8px;
+    border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background-color: #2e2f42;
+}
+.subscribe-btn{
+        min-width: 165px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 24px;
+        cursor: pointer;
+        background-color: #4d5ae5;
 
+}
+.icon-send{
+    
+    fill: #FFFF;
+}
