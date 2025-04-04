@@ -369,8 +369,9 @@
                 <input class="subscribe-input" type="email" name="subscribe" placeholder="E-mail">
         <button class="subscribe-btn" type="submit
         ">Subscribe
-            <svg class="icon-send" width="24" height="20"><use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
+        <svg class="icon-send" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
         </button>
         </form>
         </div>
@@ -378,7 +379,7 @@
     </footer>
 
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
     <div class="modal">
         <button class="modal-close-btn" type="button">
             <svg class="close-icon" width="8" height="8">
@@ -389,7 +390,7 @@
             <div class="modal-input-field">
                 <label class="label-name" for="user_name" name="user-name">Name</label>
                 <div class="modal-field">
-                    <input type="text" class="modal-input" name="user_name" id="user_name"/>
+                    <input class="modal-input" type="text" name="user_name" id="user_name"/>
                     <svg class="input-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-person"></use></svg>
                 </div>
@@ -397,7 +398,7 @@
             <div class="modal-input-field">
             <label class="label-name" for="user_phone" name="user-name">Phone</label>
                 <div class="modal-field">
-                    <input type="text" class="modal-input" name="user_phone" id="user_phone"/>
+                    <input class="modal-input" type="text" name="user_phone" id="user_phone"/>
                     <svg class="input-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-phon"></use></svg>
                 </div>
@@ -405,7 +406,7 @@
             <div class="modal-input-field">
             <label class="label-name" for="user_email" name="user-name">Email</label>
                 <div class="modal-field">
-                    <input type="text" class="modal-input" name="user_email" id="user_email"/>
+                    <input class="modal-input" type="text" name="user_email" id="user_email"/>
                     <svg class="input-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-email"></use></svg>
                 </div>
@@ -414,10 +415,11 @@
             <label class="label-name" for="Comment">Comment</label>
             <textarea class="modal-textarea" name="user_text" id="user-text" placeholder="Text input" id="Comment"></textarea>
             </div>
-            <div class="checkbox-text">
-                <input class="checkbox" type="checkbox"/>
-                <p class="policy-text">I accept the terms and conditions of the <a class="policy-link"  href="">Privacy Policy</a></p>
-            </div>
+                <input class="checkbox visually-hidden" type="checkbox" name="policy" id="checkbox" value="true"/>
+                <label class="policy-text" name="policy" for="checkbox">
+                    <span class="input-check">
+                        <svg class="check-vector" width="10" height="8"><use href="./images/icons.svg#icon-Vector"></use></svg>
+                    </span>I accept the terms and conditions of the &nbsp;<a class="policy-link"  href="">Privacy Policy </a></label>
             <button class="form-btn" type="submit">Send</button>
         </form>
     </div>
