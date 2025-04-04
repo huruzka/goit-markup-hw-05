@@ -533,7 +533,7 @@ img {
 }
 .close-icon:hover,
 .close-icon:focus{
-    fill: #FFFFFF;
+    fill: #ffffff;
 }
 .modal-titel{
     font-weight: 500;
@@ -640,6 +640,8 @@ img {
     background-color: #404BBF;
     border-radius: 2px;
     border: 1px solid #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .policy-link{
@@ -663,11 +665,12 @@ img {
 .form-btn{
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     border: none;
+    cursor: pointer;
     margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
