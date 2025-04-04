@@ -438,21 +438,19 @@ img {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        color: #ffff;  
         text-align: center;
-        color: #ffff;
-        padding: 8px 24px;
-        position: relative;
-        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus{
     color: #ffff;
+    background-color: #31d0aa;
 }
 .icon-send{
     fill: #FFFF;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
+    margin-left: 16px;
+
 }
 .modal-overlay{
     width: 100%;
