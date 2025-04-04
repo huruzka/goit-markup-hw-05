@@ -408,7 +408,11 @@ img {
 .footer .social-icon-link:focus{
     background-color: #31d0aa;
 }
-.subscribe-label{
+.subscribe-form{
+    display: flex;
+    gap:24px;
+}
+.subscribe-label {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
