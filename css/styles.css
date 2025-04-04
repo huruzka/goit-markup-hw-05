@@ -412,7 +412,7 @@ img {
     display: flex;
     gap:24px;
 }
-.subscribe-label {
+.subscribe-text{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -428,7 +428,6 @@ img {
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #2e2f42;
-    margin-right: 24px;
 }
 .subscribe-btn{
         min-width: 165px;
