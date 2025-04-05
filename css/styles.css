@@ -29,7 +29,7 @@ a:focus {
 button:hover,
 button:focus {
     cursor: pointer;
-    color: #ffffff;
+    color: #FFFFFF;
     font-weight: 500;  
     background-color: #404BBF;
 }
