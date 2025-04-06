@@ -389,7 +389,9 @@ img {
 .footer .container{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+}
+.footer-box{
+    margin-right: 120px;
 }
 .social-media-title{
     font-weight: 500;
@@ -407,6 +409,9 @@ img {
 .footer .social-icon-link:hover,
 .footer .social-icon-link:focus{
     background-color: #31d0aa;
+}
+.social-media-block{
+    margin-right: 80px;
 }
 .subscribe-form{
     display: flex;
